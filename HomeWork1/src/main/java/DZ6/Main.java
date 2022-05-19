@@ -13,7 +13,7 @@ public class Main {
         RestAssured.baseURI = "http://dataservice.accuweather.com/";
 
         Response response = given().when()
-                .get("/forecasts/v1/daily/5day/294021?apikey=%09Aa8PZpKWovk87aktkXufSfMq6QbGhbvV&q=Moscow&language=en");
+                .get("forecasts/v1/daily/5day/294021?apikey=yODGgbTvYC5fkSQNmG0rOnvPB1V8vo89");
 
         System.out.println(response.getStatusCode());
         System.out.println(response.asPrettyString());
